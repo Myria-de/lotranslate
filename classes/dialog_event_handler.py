@@ -173,7 +173,9 @@ class TranslationMenuController(unohelper.Base, XPopupMenuController, XMenuListe
                                   {'CharInteropGrabBag', 'CharStyleName', 'CharAutoStyleName'}]
                         pvals = [d[c] for c in pnames]
                         for n, v in zip(pnames, pvals):
-                            partCursor.setPropertyValue(n, v)
+                            # fix object error
+                            if not v is None:
+                                partCursor.setPropertyValue(n, v)
                         # modelCursor.setPropertyValues(pnames, pvals)
                         text.insertString(partCursor, s, 0)
                         insertedchars += len(s)

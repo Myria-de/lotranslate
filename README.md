@@ -8,7 +8,7 @@ LibreOffice with a single click.
 
 ## Installing
 
-Install the OXT from the [Release pages](https://github.com/lernapparat/lotranslate/releases/).
+Install the OXT from the [Release pages](https://github.com/Myria-de/lotranslate/releases/).
 
 ## Installing Models
 
